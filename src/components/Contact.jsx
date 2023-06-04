@@ -14,6 +14,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [status, setStatus] = useState(null);
+  const emailRule = /^[A-Z0-9.%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+  
 
   const resetForm = () => {
     setTimeout(() => {
@@ -25,7 +27,17 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-
+  
+    const emailInput = form.current.elements.email;
+    const emailValue = emailInput.value.trim();
+  
+    if (!emailRule.test(emailValue)) {
+      setLoading(false);
+      setError("Invalid email address");
+      resetForm();
+      return;
+    }
+  
     emailjs
       .sendForm(
         emailConfig.service_id,
@@ -37,7 +49,7 @@ const Contact = () => {
         (result) => {
           setStatus(result.status);
           setLoading(false);
-
+  
           if (result.status === 200) {
             form.current.reset();
             resetForm();
@@ -51,7 +63,7 @@ const Contact = () => {
         }
       );
   };
-
+  
   return (
     <section id="contact" className="container pt-10 py-20">
       <motion.div
