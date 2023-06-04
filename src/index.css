@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;    
+    }
+
+    ::-webkit-scrollbar {
+        @apply hidden;
+    }
+
+    body {        
+        font-family: 'Poppins', sans-serif;
+        background: url('./assets/bg-texture.png');
+        @apply bg-bg text-white;
+    }
+
+    h1,h2,h3,h4,h5 {
+        @apply font-semibold;
+    }
+
+    h1 {
+        @apply text-[2.5rem];
+    }
+
+    section {
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    #skills {
+        min-height: auto
+    }
+
+    section > h2, section > h5 {
+        @apply text-center text-white/60;        
+    }
+
+    section > h2 {
+        @apply text-primary mt-12 max-sm:mt-8;
+    }
+
+    a {
+        @apply text-primary transition-all duration-[400] ease-linear hover:text-white outline-white;
+    }
+
+    img {
+        @apply block w-full object-cover h-auto;
+    }
+
+    input, textarea {
+        @apply w-full md:p-6 p-3 rounded-md bg-transparent border-2 border-primary-variant resize-none outline-none focus:border-primary
+    }
+
+    button {
+        @apply focus:outline-white
+    }
+}
+
+@layer components {
+    .container {
+        @apply mx-auto max-w-[1180px] px-5 lg:px-6 max-md:px-8 max-sm:px-10;
+    }
+    .transitioning {
+        @apply transition-all duration-500 ease-out;
+    }
+
+    .btn {
+        @apply w-max inline-block text-primary p-3 rounded-md cursor-pointer border border-primary transition-all duration-[400] ease-linear hover:bg-white hover:text-bg hover:border-transparent focus:outline-white;
+    }
+    .btn-primary {
+        @apply bg-primary text-bg;
+    }   
+
+    .nav-rounded {
+        @apply rounded-full hover:bg-bg h-10 w-10 flex justify-center items-center cursor-pointer relative;
+    }
+    .nav-rounded.active {
+        @apply bg-indigo-600;
+    }
+    
+    .show-link {
+        display: flex !important;
+    }
+
+    .links-text {
+        @apply hidden lg:group-hover:block duration-500 text-[10px] absolute -bottom-4 text-white
+    }
+
+    @media screen and (max-width: 768px) {
+     .show-link {
+        display: none !important;
+     }       
+    }
+}
