@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="container py-10">
+    <section id="contact" className="container pt-10 py-20">
       <motion.div
         className="text-center"
         variants={slideFromSide(0, 0, "-100%", "0")}

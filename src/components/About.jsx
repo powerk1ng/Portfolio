@@ -3,7 +3,7 @@ import { IoIosPeople } from "react-icons/io";
 import { AiFillFolderOpen } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { container, item, rotation, slideFromSide } from "../helpers/motion";
-import profileImg from "/img/img2.jpg";
+import profileImg from "/img/img2.jpeg";
 
 const About = () => {
   return (
@@ -54,7 +54,7 @@ const About = () => {
             {/* Experience*/}
             <motion.div
               variants={item}
-              className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg"
+              className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg min-w-[180px]"
             >
               <GiRibbonMedal fill="#4db5ff" size={35} />
               <h2>Experience</h2>
@@ -64,7 +64,7 @@ const About = () => {
             {/* Clients*/}
             <motion.div
               variants={item}
-              className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg"
+              className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg min-w-[180px]"
             >
               <IoIosPeople fill="#4db5ff" size={35} />
               <h2>Clients</h2>
@@ -74,7 +74,7 @@ const About = () => {
             {/*Projects*/}
             <motion.div
               variants={item}
-              className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg"
+              className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg min-w-[180px]"
             >
               <AiFillFolderOpen fill="#4db5ff" size={35} />
               <h2>10+</h2>
