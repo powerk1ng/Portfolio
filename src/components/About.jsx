@@ -68,7 +68,7 @@ const About = () => {
             >
               <IoIosPeople fill="#4db5ff" size={35} />
               <h2>Clients</h2>
-              <h5>200+ Worldwide</h5>
+              <h5>200+</h5>
             </motion.div>
 
             {/*Projects*/}
@@ -77,7 +77,7 @@ const About = () => {
               className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg"
             >
               <AiFillFolderOpen fill="#4db5ff" size={35} />
-              <h2>80+</h2>
+              <h2>10+</h2>
               <h5>Projects completed</h5>
             </motion.div>
           </motion.div>
