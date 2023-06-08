@@ -95,15 +95,7 @@ const MySkills = () => {
                 </li>
                 <li className="flex items-center text-white">
                   <BsCodeSlash className="mr-2" fill="#4db5ff" />
-                  UI/UX Design
-                </li>
-                <li className="flex items-center text-white">
-                  <BsCodeSlash className="mr-2" fill="#4db5ff" />
                   Responsive Web Design
-                </li>
-                <li className="flex items-center text-white">
-                  <BsCodeSlash className="mr-2" fill="#4db5ff" />
-                  Testing and Debugging
                 </li>
               </ul>
             </div>

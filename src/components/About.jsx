@@ -1,5 +1,4 @@
-import { GiRibbonMedal } from "react-icons/gi";
-import { IoIosPeople } from "react-icons/io";
+import { GiRibbonMedal, GiComputing } from "react-icons/gi";
 import { AiFillFolderOpen } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { container, item, rotation, slideFromSide } from "../helpers/motion";
@@ -58,17 +57,17 @@ const About = () => {
             >
               <GiRibbonMedal fill="#4db5ff" size={35} />
               <h2>Experience</h2>
-              <h5>1 Year Working</h5>
+              <h5>6 Month Working</h5>
             </motion.div>
 
-            {/* Clients*/}
+            {/* Traning*/}
             <motion.div
               variants={item}
               className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg min-w-[180px]"
             >
-              <IoIosPeople fill="#4db5ff" size={35} />
-              <h2>Clients</h2>
-              <h5>200+</h5>
+              <GiComputing fill="#4db5ff" size={35} />
+              <h2>Frontend Courses</h2>
+              <h5>Div Academy</h5>
             </motion.div>
 
             {/*Projects*/}
@@ -77,7 +76,7 @@ const About = () => {
               className="flex flex-col gap-y-4 items-center bg-violet-900 p-5 rounded-lg min-w-[180px]"
             >
               <AiFillFolderOpen fill="#4db5ff" size={35} />
-              <h2>10+</h2>
+              <h2>5</h2>
               <h5>Projects completed</h5>
             </motion.div>
           </motion.div>
