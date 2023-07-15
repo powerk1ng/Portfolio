@@ -67,7 +67,15 @@ const MySkills = () => {
                   </li>
                   <li className="flex items-center text-white">
                     <BsCodeSlash className="mr-2" fill="#4db5ff" />
-                    React
+                    TypeScript
+                  </li>
+                  <li className="flex items-center text-white">
+                    <BsCodeSlash className="mr-2" fill="#4db5ff" />
+                    ReactJS
+                  </li>
+                  <li className="flex items-center text-white">
+                    <BsCodeSlash className="mr-2" fill="#4db5ff" />
+                    NextJs
                   </li>
                 </div>
               </ul>
